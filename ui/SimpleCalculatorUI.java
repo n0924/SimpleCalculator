@@ -26,11 +26,13 @@ public class SimpleCalculatorUI {
         }
     }
 
+    //EFFECT: menu screen
     private void menu() {
         System.out.println("\nSelect from:");
         System.out.println("\tAdd");
     }
 
+    //EFFECT: Process user input
     private void processInput(String command) {
         if (command.equals("add")) {
             add();
@@ -38,6 +40,15 @@ public class SimpleCalculatorUI {
     }
 
     private void add() {
+        System.out.println("\n Input the first number");
+        String firstInput = input.next().toLowerCase();
+        int first = Integer.parseInt(firstInput);
 
+        System.out.println("\n Input the second number");
+        String secondInput = input.next().toLowerCase();
+        int second = Integer.parseInt(secondInput);
+
+        int sum = first + second;
+        System.out.println(sum);
     }
 }
