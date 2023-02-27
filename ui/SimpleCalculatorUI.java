@@ -24,12 +24,15 @@ public class SimpleCalculatorUI {
             }
 
         }
+
+        System.out.println("Have a nice day :)");
     }
 
     //EFFECT: menu screen
     private void menu() {
         System.out.println("\nSelect from:");
         System.out.println("\tAdd");
+        System.out.println("\tQuit");
     }
 
     //EFFECT: Process user input
@@ -49,6 +52,6 @@ public class SimpleCalculatorUI {
         int second = Integer.parseInt(secondInput);
 
         int sum = first + second;
-        System.out.println(sum);
+        System.out.println("\n The sum of " + first + " & " + second + " is: " + sum);
     }
 }
